@@ -1,0 +1,18 @@
+body {
+    padding-top: 20px;
+}
+
+#board {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#traps-list {
+    cursor: pointer;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
