@@ -131,6 +131,8 @@ function showCurrentMove() {
 }
 
 function showTrap(trap) {
+    document.getElementById(trap).removeAttribute('class');
+    document.getElementById(trap).setAttribute('class','list-group-item');
     text.innerHTML= trap;
     currentTrap = trap;
     currentMoveIndex = 0;
