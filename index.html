@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess Traps Visualization</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.css" integrity="sha512-KRrFrm+GAPOl6xxootmuQHKDoGiR2Gtifqd6XFUH++sluyhWui3vJCkmt0FN0k/H9TQn0f4sZFltC+XnQAKKvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css" integrity="sha512-TU/clvRaSqKB43MX6dvJPEWV8tEGDTbmT4mdxTs6DSYsBY9zKmiw4Qeykp0nS10ndH14HRNG2VWN+IjiMfA17Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="chessboardjs-1.0.0/css/chessboard-1.0.0.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-dark">
     <div class="container">
-        <h1 class="text-center">Chess Traps Visualization</h1>
+        <h1 class="text-center text-light">Chess Traps Visualization</h1>
         <div class="row">
             <div class="col-md-4">
                 <ul class="list-group" id="traps-list">
-                     <li class="list-group-item" data-trap="fried-liver">Fried Liver Attack</li>
-            <li class="list-group-item" data-trap="legals-mate">Legal's Mate</li>
-            <li class="list-group-item" data-trap="blackburne-shilling">Blackburne Shilling Gambit</li>
-            <li class="list-group-item" data-trap="elephant-trap">Elephant Trap</li>
-            <li class="list-group-item" data-trap="englund-gambit">Englund Gambit Trap</li>
-            <li class="list-group-item" data-trap="lasker-trap">Lasker Trap (Queen's Gambit Declined)</li>
-            <li class="list-group-item" data-trap="noahs-ark">Noah's Ark Trap (Budapest Gambit)</li>
-            <li class="list-group-item" data-trap="traxler-counterattack">Traxler Counterattack (Wilkes-Barre/Leipzig Variation)</li>
-            <li class="list-group-item" data-trap="mortimer-trap">Mortimer Trap (French Defense)</li>
-            <li class="list-group-item" data-trap="bodens-mate">Boden's Mate (Classic Checkmate Pattern)</li>
+            <li class="list-group-item bg-dark" data-trap="fried-liver" id="fried-liver">Fried Liver Attack</li>
+            <li class="list-group-item bg-dark" data-trap="legals-mate" id="legals-mate">Legal's Mate</li>
+            <li class="list-group-item bg-dark" data-trap="blackburne-shilling" id="blackburne-shilling">Blackburne Shilling Gambit</li>
+            <li class="list-group-item bg-dark" data-trap="elephant-trap" id="elephant-trap">Elephant Trap</li>
+            <li class="list-group-item bg-dark" data-trap="englund-gambit" id="englund-gambit">Englund Gambit Trap</li>
+            <li class="list-group-item bg-dark" data-trap="lasker-trap" id="lasker-trap">Lasker Trap (Queen's Gambit Declined)</li>
+            <li class="list-group-item bg-dark" data-trap="noahs-ark" id="noahs-ark">Noah's Ark Trap (Budapest Gambit)</li>
+            <li class="list-group-item bg-dark" data-trap="traxler-counterattack" id="traxler-counterattack">Traxler Counterattack (Wilkes-Barre/Leipzig Variation)</li>
+            <li class="list-group-item bg-dark" data-trap="mortimer-trap" id="mortimer-trap">Mortimer Trap (French Defense)</li>
+            <li class="list-group-item bg-dark" data-trap="bodens-mate" id="bodens-mate">Boden's Mate (Classic Checkmate Pattern)</li>
+
                 </ul>
             </div>
             <div class="col-md-8">
@@ -44,9 +43,9 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.js" integrity="sha512-TGU/O51undmqzEuGui6G+td333I3Wufy17Foi8O5TUc4z9rSJg+IpGmRCnLl5s0MUycrdj7vpD6YMsbRppVVzw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js" integrity="sha512-WfASs5HtTgTL/eZsLaOftSN9wMQl7WZGlU5UiKx/yxTViMfGh9whWRwKAC27qH8VtZJqSMqDdbq2uUb1tY3jvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="chessboardjs-1.0.0/js/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
